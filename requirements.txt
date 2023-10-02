@@ -42,7 +42,6 @@ huggingface-hub
 idna
 importlib-metadata
 imutils
-inutils
 ipykernel
 ipython
 ipython-genutils
