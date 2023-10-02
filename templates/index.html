@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Job Recommendation</title>
+</head>
+<body>
+    <h1>Job Recommendation Based on Skills</h1>
+    <form method="POST" action="/recommend">
+        <label for="skills">Enter your skills (comma-separated):</label>
+        <input type="text" name="skills" id="skills" required>
+        <button type="submit">Recommend Jobs</button>
+    </form>
+    <div>
+        <h2>Recommended Jobs:</h2>
+        <ul>
+            {% for job in recommended_jobs %}
+            <li>{{ job }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
