@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from fuzzywuzzy import fuzz
 
 app = Flask(__name__)
-model = joblib.load('job(1)(1).pkl')
+model = joblib.load('job1.pkl')
 
 # Load job data from the CSV file
 job_data = pd.read_csv('IT_salaries.csv')  # Update the file name if needed
